@@ -1,4 +1,12 @@
 
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////// */
+
+/* sidebar ke all icons  */
 .menu {
   list-style: none;
   padding: 0;
@@ -62,7 +70,7 @@
 
 .container {
   display: flex;
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 * {
@@ -71,11 +79,12 @@
   box-sizing: border-box;
 }
 
+
 .sidebar {
-  width: 250px;
+  width: 380px;                         /* change250 */
   background-color: #f5f5f5;
-  height: 500px;
-  position: fixed;
+  height:650px;                           /* 500*/
+  position: sticky;                                                      /* change */
   left: 0;
   top: 132px;
   padding-top: 40px;
@@ -106,7 +115,7 @@
 .sidebar-toggle {
   display: none;
   position: fixed;
-  top: 140px;
+  top: 150px;
   left: 15px;
   font-size: 24px;
   background: none;
@@ -147,7 +156,7 @@ button:hover {
 
 /* Main Content */
 main {
-  margin-left: 270px;
+  margin-left: 80px;           /*270px*/
   margin-top: 70px;
   flex-grow: 1;
   padding: 20px;
@@ -161,7 +170,7 @@ main {
 }
 
 .full-width-banner {
-  width: 1000px;
+  width: 1250px;                                          /* change 1000px*/
   height: 250px;
   border-radius: 25px;
   border: 2px 2px 2px 2px solid rgb(9, 1, 16);
@@ -210,6 +219,7 @@ main {
 }
 
 /* banerre*/
+
 
 * {
   margin: 0;
@@ -295,8 +305,8 @@ body {
   border-radius: 20px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  width: 230px; /* Exact size match */
-  height: 340px; /* Fixed height */
+  width: 250px; /* Exact size match */
+  height: 350px; /* Fixed height */
   text-align: center;
   transition: all 0.3s ease-in-out;
   border: 5px solid white; /* White Border */
@@ -388,8 +398,9 @@ body {
 .footer {
   height: fit-content;
   /* width: calc(1570px - 300px); */
-  width: calc(100% - 300px); 
-  margin-left: 250px;
+  /* width: calc(100% - 350px); */
+  width: calc(1000px -350px);                                      /* total change dive size */
+  margin-left: 20px;                                                           /* 200    */
   padding: 64px 32px;
   background: url(/image_all/footer\ overlay.png) no-repeat center;
  
@@ -399,6 +410,7 @@ body {
   background-attachment: fixed;
   overflow-x: hidden; /* Scrollbar हटाया */
 }
+
 
 html,
 body {
@@ -428,7 +440,7 @@ footer .left {
 }
 
 footer .left img {
-  width: 330px;
+  width: 350px;                                       /*320   */
 }
 
 footer .left p {
@@ -445,7 +457,7 @@ footer .left a {
 
 footer .links-head,
 .links-social {
-  max-width: 30%;
+  max-width: 40%;
   align-items: start;
 }
 
@@ -458,10 +470,28 @@ footer .links {
 .links-social h3 {
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 650;
   margin-bottom: 16px;
   align-items: start;
+  
 }
+/* //////////////////recharge ////////////////// */
+.research-heading {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000; /* Black color, same as in image */
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif; /* clean, formal font */
+  margin-left: -300px;
+  
+}
+
+#vertival_line_text{
+  text-align: start;
+  align-items: start;
+}
+/* //////////////////////////////////// */
 
 .links-head .links-1,
 .links-2,
@@ -470,7 +500,7 @@ footer .links {
 .links-2 {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 17px;                                                     /*   14           */
 }
 
 .links-head a,
@@ -478,7 +508,7 @@ footer .links {
   text-decoration: none;
   color: grey;
   transition: 0.3s ease-in-out;
-  font-size: 14px;
+  font-size:18px;                     /*    14   */
 }
 
 .links-head a:hover,
@@ -494,26 +524,47 @@ footer .links {
   gap: 8px;
 }
 
+/*      content part */
+.con{
+  margin-right: 200px;
+}
+
+/* //////////////////// */
+.links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* //////////////////////// chnage  */
+
+
+
 /* Copyright Section */
 .copyrightsection {
-  width: calc(100% - 300px);
-  margin-left: 300px;
+  width: calc(100% - 80px);
+  margin-left: 20px;
   display: flex;
   justify-content: space-between;
   padding: 2px;
-  background: #f4f1f1;
   color: rgb(20, 11, 11);
   overflow-x: hidden; /* Scrollbar हटाया */
+  margin-top: 9px;
 }
 
 .copyrightsection p,
 .copyrightsection a {
   font-size: 12px;
+  font-weight: bold;
 }
 
 .copyrightsection .link {
   display: flex;
-  gap: 12px;
+  gap: 18px;
 }
 
 .copyrightsection .link a {

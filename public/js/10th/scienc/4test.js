@@ -1,213 +1,228 @@
 const questions = [
 
-        // ===== PHYSICS (15 Questions) =====
-        {
-          "num": 1,
-          "question_en": "What is the SI unit of electric current?",
-          "question_hi": "विद्युत धारा का SI मात्रक क्या है?",
-          "options_en": ["Volt", "Ampere", "Ohm", "Watt"],
-          "options_hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"],
-          "answer": "Ampere",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 2,
-          "question_en": "The power of a lens is +2.0 D. Its focal length is:",
-          "question_hi": "एक लेंस की क्षमता +2.0 D है। इसकी फोकस दूरी है:",
-          "options_en": ["+50 cm", "+20 cm", "+2 cm", "+0.5 cm"],
-          "options_hi": ["+50 सेमी", "+20 सेमी", "+2 सेमी", "+0.5 सेमी"],
-          "answer": "+50 cm",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 3,
-          "question_en": "Fleming's left-hand rule is used to determine:",
-          "question_hi": "फ्लेमिंग के बाएं हाथ का नियम किसे निर्धारित करने के लिए प्रयोग किया जाता है?",
-          "options_en": ["Direction of current", "Direction of force", "Direction of magnetic field", "EMF direction"],
-          "options_hi": ["धारा की दिशा", "बल की दिशा", "चुंबकीय क्षेत्र की दिशा", "विद्युत वाहक बल की दिशा"],
-          "answer": "Direction of force",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 4,
-          "question_en": "The resistance of a conductor depends on:",
-          "question_hi": "किसी चालक का प्रतिरोध निर्भर करता है:",
-          "options_en": ["Length only", "Area only", "Material only", "All of these"],
-          "options_hi": ["केवल लंबाई पर", "केवल क्षेत्रफल पर", "केवल पदार्थ पर", "इन सभी पर"],
-          "answer": "All of these",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 5,
-          "question_en": "In a concave mirror, if the object is placed between F and C, the image will be:",
-          "question_hi": "अवतल दर्पण में, यदि वस्तु F और C के बीच रखी जाए, तो प्रतिबिंब होगा:",
-          "options_en": ["Virtual and erect", "Real and inverted", "Diminished", "At infinity"],
-          "options_hi": ["आभासी और सीधा", "वास्तविक और उल्टा", "छोटा", "अनंत पर"],
-          "answer": "Real and inverted",
-          "attempted": false,
-          "selected": ""
-        },
-      
-        // ===== CHEMISTRY (15 Questions) =====
-        {
-          "num": 16,
-          "question_en": "The pH of a neutral solution is:",
-          "question_hi": "एक उदासीन विलयन का pH मान होता है:",
-          "options_en": ["0", "7", "10", "14"],
-          "options_hi": ["0", "7", "10", "14"],
-          "answer": "7",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 17,
-          "question_en": "Which gas turns lime water milky?",
-          "question_hi": "कौन सी गैस चूने के पानी को दूधिया बना देती है?",
-          "options_en": ["Oxygen", "Hydrogen", "Carbon dioxide", "Nitrogen"],
-          "options_hi": ["ऑक्सीजन", "हाइड्रोजन", "कार्बन डाइऑक्साइड", "नाइट्रोजन"],
-          "answer": "Carbon dioxide",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 18,
-          "question_en": "The chemical formula of baking soda is:",
-          "question_hi": "बेकिंग सोडा का रासायनिक सूत्र है:",
-          "options_en": ["NaCl", "NaHCO₃", "NaOH", "Na₂CO₃"],
-          "options_hi": ["NaCl", "NaHCO₃", "NaOH", "Na₂CO₃"],
-          "answer": "NaHCO₃",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 19,
-          "question_en": "Which metal is liquid at room temperature?",
-          "question_hi": "कौन सी धातु कमरे के तापमान पर तरल होती है?",
-          "options_en": ["Iron", "Mercury", "Gold", "Aluminum"],
-          "options_hi": ["लोहा", "पारा", "सोना", "एल्युमिनियम"],
-          "answer": "Mercury",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 20,
-          "question_en": "The IUPAC name of C₂H₅OH is:",
-          "question_hi": "C₂H₅OH का IUPAC नाम है:",
-          "options_en": ["Methane", "Ethanol", "Propanol", "Butanol"],
-          "options_hi": ["मीथेन", "एथेनॉल", "प्रोपेनॉल", "ब्यूटेनॉल"],
-          "answer": "Ethanol",
-          "attempted": false,
-          "selected": ""
-        },
-      
-        // ===== BIOLOGY (15 Questions) =====
-        {
-          "num": 21,
-          "question_en": "The site of photosynthesis in plants is:",
-          "question_hi": "पौधों में प्रकाश संश्लेषण का स्थान है:",
-          "options_en": ["Mitochondria", "Chloroplast", "Nucleus", "Ribosome"],
-          "options_hi": ["माइटोकॉन्ड्रिया", "हरितलवक", "केंद्रक", "राइबोसोम"],
-          "answer": "Chloroplast",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 22,
-          "question_en": "The functional unit of kidney is:",
-          "question_hi": "वृक्क की क्रियात्मक इकाई है:",
-          "options_en": ["Neuron", "Nephron", "Alveoli", "Bronchiole"],
-          "options_hi": ["न्यूरॉन", "नेफ्रॉन", "वायुकोश", "श्वसनिका"],
-          "answer": "Nephron",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 23,
-          "question_en": "Which plant hormone promotes cell division?",
-          "question_hi": "कौन सा पादप हार्मोन कोशिका विभाजन को प्रोत्साहित करता है?",
-          "options_en": ["Auxin", "Gibberellin", "Cytokinin", "Abscisic acid"],
-          "options_hi": ["ऑक्सिन", "जिबरेलिन", "साइटोकाइनिन", "एब्सिसिक अम्ल"],
-          "answer": "Cytokinin",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 24,
-          "question_en": "The number of chromosomes in human gametes is:",
-          "question_hi": "मानव युग्मकों में गुणसूत्रों की संख्या होती है:",
-          "options_en": ["23", "46", "22", "44"],
-          "options_hi": ["23", "46", "22", "44"],
-          "answer": "23",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 25,
-          "question_en": "Which part of the brain controls balance and posture?",
-          "question_hi": "मस्तिष्क का कौन सा भाग संतुलन और मुद्रा को नियंत्रित करता है?",
-          "options_en": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
-          "options_hi": ["सेरेब्रम", "सेरेबेलम", "मेडुला", "हाइपोथैलेमस"],
-          "answer": "Cerebellum",
-          "attempted": false,
-          "selected": ""
-        },
-      
-        // ===== ENVIRONMENTAL SCIENCE (5 Questions) =====
-        {
-          "num": 26,
-          "question_en": "Which of these is a renewable source of energy?",
-          "question_hi": "निम्न में से कौन ऊर्जा का नवीकरणीय स्रोत है?",
-          "options_en": ["Coal", "Petroleum", "Solar energy", "Natural gas"],
-          "options_hi": ["कोयला", "पेट्रोलियम", "सौर ऊर्जा", "प्राकृतिक गैस"],
-          "answer": "Solar energy",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 27,
-          "question_en": "The Chipko Movement was related to:",
-          "question_hi": "चिपको आंदोलन किससे संबंधित था?",
-          "options_en": ["Water conservation", "Forest conservation", "Wildlife protection", "Air pollution"],
-          "options_hi": ["जल संरक्षण", "वन संरक्षण", "वन्यजीव संरक्षण", "वायु प्रदूषण"],
-          "answer": "Forest conservation",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 28,
-          "question_en": "The main greenhouse gas responsible for global warming is:",
-          "question_hi": "ग्लोबल वार्मिंग के लिए मुख्य रूप से जिम्मेदार ग्रीनहाउस गैस है:",
-          "options_en": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
-          "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "कार्बन डाइऑक्साइड", "हाइड्रोजन"],
-          "answer": "Carbon dioxide",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 29,
-          "question_en": "The process of water percolating into the ground is called:",
-          "question_hi": "भूमि में जल के रिसने की प्रक्रिया कहलाती है:",
-          "options_en": ["Infiltration", "Evaporation", "Condensation", "Transpiration"],
-          "options_hi": ["अंत:स्यंदन", "वाष्पीकरण", "संघनन", "वाष्पोत्सर्जन"],
-          "answer": "Infiltration",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 30,
-          "question_en": "Which of these is a biodegradable waste?",
-          "question_hi": "निम्न में से कौन जैव निम्नीकरणीय अपशिष्ट है?",
-          "options_en": ["Plastic bags", "Glass bottles", "Vegetable peels", "Aluminum cans"],
-          "options_hi": ["प्लास्टिक बैग", "कांच की बोतलें", "सब्जी के छिलके", "एल्युमिनियम के डिब्बे"],
-          "answer": "Vegetable peels",
-          "attempted": false,
-          "selected": ""
-        }
-      
+  
+    {
+      "num": 1,
+      "question_en": "What is the SI unit of electric potential difference?",
+      "question_hi": "विद्युत विभवांतर का SI मात्रक क्या है?",
+      "options_en": ["Ampere", "Volt", "Ohm", "Watt"],
+      "options_hi": ["एम्पियर", "वोल्ट", "ओम", "वाट"],
+      "answer_en": "Volt",
+      "answer_hi": "वोल्ट",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 2,
+      "question_en": "The focal length of a convex lens is:",
+      "question_hi": "एक उत्तल लेंस की फोकस दूरी होती है:",
+      "options_en": ["Always negative", "Always positive", "Can be positive or negative", "Zero"],
+      "options_hi": ["हमेशा नकारात्मक", "हमेशा सकारात्मक", "सकारात्मक या नकारात्मक हो सकती है", "शून्य"],
+      "answer_en": "Always positive",
+      "answer_hi": "हमेशा सकारात्मक",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 3,
+      "question_en": "The device used to measure electric current is:",
+      "question_hi": "विद्युत धारा मापने के लिए प्रयुक्त उपकरण है:",
+      "options_en": ["Voltmeter", "Ammeter", "Galvanometer", "Ohmmeter"],
+      "options_hi": ["वोल्टमीटर", "एमीटर", "गैल्वेनोमीटर", "ओममीटर"],
+      "answer_en": "Ammeter",
+      "answer_hi": "एमीटर",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 4,
+      "question_en": "The resistivity of a conductor depends on:",
+      "question_hi": "किसी चालक की प्रतिरोधकता निर्भर करती है:",
+      "options_en": ["Length", "Area of cross-section", "Material", "Both length and area"],
+      "options_hi": ["लंबाई", "अनुप्रस्थ काट का क्षेत्रफल", "पदार्थ", "लंबाई और क्षेत्रफल दोनों"],
+      "answer_en": "Material",
+      "answer_hi": "पदार्थ",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 5,
+      "question_en": "In a convex mirror, the image formed is always:",
+      "question_hi": "उत्तल दर्पण में, बनने वाला प्रतिबिंब हमेशा होता है:",
+      "options_en": ["Real and inverted", "Virtual and erect", "Real and erect", "Virtual and inverted"],
+      "options_hi": ["वास्तविक और उल्टा", "आभासी और सीधा", "वास्तविक और सीधा", "आभासी और उल्टा"],
+      "answer_en": "Virtual and erect",
+      "answer_hi": "आभासी और सीधा",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 16,
+      "question_en": "Which of the following is a strong acid?",
+      "question_hi": "निम्नलिखित में से कौन सा एक प्रबल अम्ल है?",
+      "options_en": ["Acetic acid", "Citric acid", "Hydrochloric acid", "Carbonic acid"],
+      "options_hi": ["एसिटिक अम्ल", "साइट्रिक अम्ल", "हाइड्रोक्लोरिक अम्ल", "कार्बोनिक अम्ल"],
+      "answer_en": "Hydrochloric acid",
+      "answer_hi": "हाइड्रोक्लोरिक अम्ल",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 17,
+      "question_en": "What is the chemical formula of water?",
+      "question_hi": "पानी का रासायनिक सूत्र क्या है?",
+      "options_en": ["CO₂", "H₂O", "NH₃", "HCl"],
+      "options_hi": ["CO₂", "H₂O", "NH₃", "HCl"],
+      "answer_en": "H₂O",
+      "answer_hi": "H₂O",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 18,
+      "question_en": "The process of heating an ore strongly in the absence of air is called:",
+      "question_hi": "अयस्क को हवा की अनुपस्थिति में तीव्रता से गर्म करने की प्रक्रिया कहलाती है:",
+      "options_en": ["Roasting", "Calcination", "Smelting", "Leaching"],
+      "options_hi": ["भर्जन", "निस्तापन", "प्रगलन", "निक्षालन"],
+      "answer_en": "Calcination",
+      "answer_hi": "निस्तापन",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 19,
+      "question_en": "Which non-metal is lustrous?",
+      "question_hi": "कौन सा अधातु चमकीला होता है?",
+      "options_en": ["Sulfur", "Phosphorus", "Iodine", "Carbon"],
+      "options_hi": ["सल्फर", "फास्फोरस", "आयोडीन", "कार्बन"],
+      "answer_en": "Iodine",
+      "answer_hi": "आयोडीन",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 20,
+      "question_en": "The functional group of aldehydes is:",
+      "question_hi": "एल्डिहाइड का कार्यात्मक समूह है:",
+      "options_en": ["-OH", "-COOH", "-CHO", "-CO-"],
+      "options_hi": ["-OH", "-COOH", "-CHO", "-CO-"],
+      "answer_en": "-CHO",
+      "answer_hi": "-CHO",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 21,
+      "question_en": "The basic structural and functional unit of life is:",
+      "question_hi": "जीवन की आधारभूत संरचनात्मक और कार्यात्मक इकाई है:",
+      "options_en": ["Tissue", "Organ", "Cell", "Organ system"],
+      "options_hi": ["ऊतक", "अंग", "कोशिका", "अंग तंत्र"],
+      "answer_en": "Cell",
+      "answer_hi": "कोशिका",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 22,
+      "question_en": "Which part of the digestive system absorbs digested food?",
+      "question_hi": "पाचन तंत्र का कौन सा भाग पचे हुए भोजन को अवशोषित करता है?",
+      "options_en": ["Stomach", "Small intestine", "Large intestine", "Esophagus"],
+      "options_hi": ["आमाशय", "छोटी आंत", "बड़ी आंत", "ग्रासनली"],
+      "answer_en": "Small intestine",
+      "answer_hi": "छोटी आंत",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 23,
+      "question_en": "The movement of water in plants against gravity is due to:",
+      "question_hi": "पौधों में गुरुत्वाकर्षण के विपरीत जल की गति किसके कारण होती है?",
+      "options_en": ["Osmosis", "Transpiration pull", "Root pressure", "Photosynthesis"],
+      "options_hi": ["परासरण", "वाष्पोत्सर्जन खिंचाव", "मूल दाब", "प्रकाश संश्लेषण"],
+      "answer_en": "Transpiration pull",
+      "answer_hi": "वाष्पोत्सर्जन खिंचाव",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 24,
+      "question_en": "The process of fusion of male and female gametes is called:",
+      "question_hi": "नर और मादा युग्मकों के संलयन की प्रक्रिया कहलाती है:",
+      "options_en": ["Pollination", "Fertilization", "Germination", "Reproduction"],
+      "options_hi": ["परागण", "निषेचन", "अंकुरण", "प्रजनन"],
+      "answer_en": "Fertilization",
+      "answer_hi": "निषेचन",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 25,
+      "question_en": "Which part of the human brain is responsible for memory?",
+      "question_hi": "मानव मस्तिष्क का कौन सा भाग स्मृति के लिए जिम्मेदार है?",
+      "options_en": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
+      "options_hi": ["सेरेब्रम", "सेरेबेलम", "मेडुला", "हाइपोथैलेमस"],
+      "answer_en": "Cerebrum",
+      "answer_hi": "सेरेब्रम",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 26,
+      "question_en": "Acid rain is mainly caused by oxides of:",
+      "question_hi": "अम्ल वर्षा मुख्य रूप से किसके ऑक्साइड के कारण होती है?",
+      "options_en": ["Carbon and nitrogen", "Sulfur and phosphorus", "Sulfur and nitrogen", "Phosphorus and carbon"],
+      "options_hi": ["कार्बन और नाइट्रोजन", "सल्फर और फास्फोरस", "सल्फर और नाइट्रोजन", "फास्फोरस और कार्बन"],
+      "answer_en": "Sulfur and nitrogen",
+      "answer_hi": "सल्फर और नाइट्रोजन",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 27,
+      "question_en": "Deforestation leads to:",
+      "question_hi": "वनोन्मूलन से होता है:",
+      "options_en": ["Increased rainfall", "Soil conservation", "Soil erosion", "Cooling of the environment"],
+      "options_hi": ["बढ़ी हुई वर्षा", "मृदा संरक्षण", "मृदा अपरदन", "वातावरण का ठंडा होना"],
+      "answer_en": "Soil erosion",
+      "answer_hi": "मृदा अपरदन",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 28,
+      "question_en": "The increase in the concentration of non-biodegradable pollutants in successive trophic levels is called:",
+      "question_hi": "उत्तरोत्तर पोषण स्तरों में गैर-जैव निम्नीकरणीय प्रदूषकों की सांद्रता में वृद्धि कहलाती है:",
+      "options_en": ["Biomagnification", "Bioaccumulation", "Eutrophication", "Pollution"],
+      "options_hi": ["जैव आवर्धन", "जैव संचय", "सुपोषण", "प्रदूषण"],
+      "answer_en": "Biomagnification",
+      "answer_hi": "जैव आवर्धन",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 29,
+      "question_en": "The depletion of the ozone layer is mainly caused by:",
+      "question_hi": "ओजोन परत का क्षरण मुख्य रूप से किसके कारण होता है?",
+      "options_en": ["Carbon dioxide", "Methane", "Chlorofluorocarbons", "Nitrogen dioxide"],
+      "options_hi": ["कार्बन डाइऑक्साइड", "मीथेन", "क्लोरोफ्लोरोकार्बन", "नाइट्रोजन डाइऑक्साइड"],
+      "answer_en": "Chlorofluorocarbons",
+      "answer_hi": "क्लोरोफ्लोरोकार्बन",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 30,
+      "question_en": "Which of the following is a non-biodegradable pollutant?",
+      "question_hi": "निम्नलिखित में से कौन सा एक गैर-जैव निम्नीकरणीय प्रदूषक है?",
+      "options_en": ["Paper", "Sewage", "Plastic", "Food waste"],
+      "options_hi": ["कागज", "मलजल", "प्लास्टिक", "खाद्य अपशिष्ट"],
+      "answer_en": "Plastic",
+      "answer_hi": "प्लास्टिक",
+      "attempted": false,
+      "selected": ""
+    }
+  
+  
 
 
 ];
@@ -297,31 +312,36 @@ function changeLanguage() {
 }
 
 function submitQuiz() {
-    let confirmation = confirm("Are you sure you want to submit the test?");
-    if (!confirmation) return;
+  let confirmation = confirm("Are you sure you want to submit the test?");
+  if (!confirmation) return;
 
-    let attempted = 0, notAttempted = 0, score = 0;
-    const results = [];
+  let attempted = 0, notAttempted = 0, score = 0;
+  const results = [];
 
-    questions.forEach(q => {
-        if (q.attempted) {
-            attempted++;
-            if (q.selected === q.answer) score++;
-        } else {
-            notAttempted++;
-        }
-        results.push({ question: q.question_en, selected: q.selected || "Not Answered", correct: q.answer });
-    });
+  questions.forEach(q => {
+      const correctAnswer = language === "en" ? q.answer_en : q.answer_hi;
+      if (q.attempted) {
+          attempted++;
+          if (q.selected === correctAnswer) score++;
+      } else {
+          notAttempted++;
+      }
+      results.push({ 
+          question: language === "en" ? q.question_en : q.question_hi,
+          selected: q.selected || "Not Answered", 
+          correct: correctAnswer 
+      });
+  });
 
-    localStorage.setItem("attempted", attempted);
-    localStorage.setItem("notAttempted", notAttempted);
-    localStorage.setItem("score", score);
-    localStorage.setItem("results", JSON.stringify(results));
+  localStorage.setItem("attempted", attempted);
+  localStorage.setItem("notAttempted", notAttempted);
+  localStorage.setItem("score", score);
+  localStorage.setItem("results", JSON.stringify(results));
 
-    let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-    if (viewResult) {
-        window.location.href = "/Deshbord/category/test/submit-test.html";
-    }
+  let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
+  if (viewResult) {
+      window.location.href = "/Deshbord/category/test/submit-test.html";
+  }
 }
 
 function startTimer() {

@@ -1,111 +1,111 @@
 const questions = [
 
     
+    {
+      "num": 1,
+      "question_en": "What is the meaning of the word 'Sanskrit'?",
+      "question_hi": "संस्कृत शब्द का अर्थ क्या है?",
+      "options_en": ["Ancient", "Pure", "Complex", "New"],
+      "options_hi": ["प्राचीन", "शुद्ध", "जटिल", "नया"],
+      "answer": "Pure",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 2,
+      "question_en": "Who is the author of the Sanskrit text 'Raghukul Nandan'?",
+      "question_hi": "संस्कृत ग्रंथ 'रघुकुल नंदन' के लेखक कौन हैं?",
+      "options_en": ["Kalidasa", "Bharavi", "Raja Shankar", "Harshvardhan"],
+      "options_hi": ["कालिदास", "भारवि", "राजा शंकर", "हर्षवर्धन"],
+      "answer": "Kalidasa",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 3,
+      "question_en": "What is the meaning of 'Dharma' in Sanskrit literature?",
+      "question_hi": "संस्कृत साहित्य में 'धर्म' का क्या अर्थ है?",
+      "options_en": ["Truth", "Duty", "Religion", "Wealth"],
+      "options_hi": ["सत्य", "कर्तव्य", "धर्म", "धन"],
+      "answer": "Duty",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 4,
+      "question_en": "Which epic is primarily written in Sanskrit?",
+      "question_hi": "कौन सा महाकाव्य मुख्य रूप से संस्कृत में लिखा गया है?",
+      "options_en": ["Mahabharata", "Ramayana", "Vishnu Purana", "Upanishads"],
+      "options_hi": ["महाभारत", "रामायण", "विष्णु पुराण", "उपनिषद"],
+      "answer": "Mahabharata",
+      "attempted": false,
+      "selected": ""
+    },
+    {
+      "num": 5,
+      "question_en": "What does 'Tat' mean in Sanskrit?",
+      "question_hi": "संस्कृत में 'तत्' का क्या अर्थ है?",
+      "options_en": ["That", "This", "Here", "There"],
+      "options_hi": ["वह", "यह", "यहां", "वहां"],
+      "answer": "That",
+      "attempted": false,
+      "selected": ""
+    },
+    
         {
-          "num": 1,
-          "question_en": "What is the meaning of the word 'Sanskrit'?",
-          "question_hi": "संस्कृत शब्द का अर्थ क्या है?",
-          "options_en": ["Ancient", "Pure", "Complex", "New"],
-          "options_hi": ["प्राचीन", "शुद्ध", "जटिल", "नया"],
-          "answer": "Pure",
+          "num": 6,
+          "question_en": "Which of the following is the most famous work of Kalidasa?",
+          "question_hi": "नीचे दिए गए में से कालिदास का सबसे प्रसिद्ध काव्य कौन सा है?",
+          "options_en": ["Shakuntala", "Meghaduta", "Raghuvamsa", "Abhijnana Shakuntalam"],
+          "options_hi": ["शकुंतला", "मेघदूत", "रघुवंसा", "अभिज्ञान शकुंतलाम"],
+          "answer": "Shakuntala",
           "attempted": false,
           "selected": ""
         },
         {
-          "num": 2,
-          "question_en": "Who is the author of the Sanskrit text 'Raghukul Nandan'?",
-          "question_hi": "संस्कृत ग्रंथ 'रघुकुल नंदन' के लेखक कौन हैं?",
-          "options_en": ["Kalidasa", "Bharavi", "Raja Shankar", "Harshvardhan"],
-          "options_hi": ["कालिदास", "भारवि", "राजा शंकर", "हर्षवर्धन"],
-          "answer": "Kalidasa",
+          "num": 7,
+          "question_en": "In Sanskrit, what is the term for 'love'?",
+          "question_hi": "संस्कृत में 'प्रेम' के लिए कौन सा शब्द है?",
+          "options_en": ["Prema", "Kama", "Bhakti", "Sambandha"],
+          "options_hi": ["प्रेम", "काम", "भक्ति", "संबंध"],
+          "answer": "Prema",
           "attempted": false,
           "selected": ""
         },
         {
-          "num": 3,
-          "question_en": "What is the meaning of 'Dharma' in Sanskrit literature?",
-          "question_hi": "संस्कृत साहित्य में 'धर्म' का क्या अर्थ है?",
-          "options_en": ["Truth", "Duty", "Religion", "Wealth"],
-          "options_hi": ["सत्य", "कर्तव्य", "धर्म", "धन"],
-          "answer": "Duty",
+          "num": 8,
+          "question_en": "Which Sanskrit text is dedicated to the teachings of Lord Shiva?",
+          "question_hi": "कौन सा संस्कृत ग्रंथ भगवान शिव के उपदेशों को समर्पित है?",
+          "options_en": ["Shiv Purana", "Vishnu Purana", "Bhagavad Gita", "Rigveda"],
+          "options_hi": ["शिव पुराण", "विष्णु पुराण", "भगवद गीता", "ऋग्वेद"],
+          "answer": "Shiv Purana",
           "attempted": false,
           "selected": ""
         },
         {
-          "num": 4,
-          "question_en": "Which epic is primarily written in Sanskrit?",
-          "question_hi": "कौन सा महाकाव्य मुख्य रूप से संस्कृत में लिखा गया है?",
-          "options_en": ["Mahabharata", "Ramayana", "Vishnu Purana", "Upanishads"],
-          "options_hi": ["महाभारत", "रामायण", "विष्णु पुराण", "उपनिषद"],
-          "answer": "Mahabharata",
+          "num": 9,
+          "question_en": "What does 'Yoga' mean in Sanskrit?",
+          "question_hi": "संस्कृत में 'योग' का क्या अर्थ है?",
+          "options_en": ["Union", "Discipline", "Meditation", "Health"],
+          "options_hi": ["संयोग", "अनुशासन", "ध्यान", "स्वास्थ्य"],
+          "answer": "Union",
           "attempted": false,
           "selected": ""
         },
         {
-          "num": 5,
-          "question_en": "What does 'Tat' mean in Sanskrit?",
-          "question_hi": "संस्कृत में 'तत्' का क्या अर्थ है?",
-          "options_en": ["That", "This", "Here", "There"],
-          "options_hi": ["वह", "यह", "यहां", "वहां"],
-          "answer": "That",
+          "num": 10,
+          "question_en": "Which ancient Indian text is considered the foundation of Sanskrit grammar?",
+          "question_hi": "कौन सा प्राचीन भारतीय ग्रंथ संस्कृत व्याकरण का आधार माना जाता है?",
+          "options_en": ["Ashtadhyayi", "Mahabharata", "Ramayana", "Vedas"],
+          "options_hi": ["अष्टाध्यायी", "महाभारत", "रामायण", "वेद"],
+          "answer": "Ashtadhyayi",
           "attempted": false,
           "selected": ""
-        },
-        
-            {
-              "num": 6,
-              "question_en": "Which of the following is the most famous work of Kalidasa?",
-              "question_hi": "नीचे दिए गए में से कालिदास का सबसे प्रसिद्ध काव्य कौन सा है?",
-              "options_en": ["Shakuntala", "Meghaduta", "Raghuvamsa", "Abhijnana Shakuntalam"],
-              "options_hi": ["शकुंतला", "मेघदूत", "रघुवंसा", "अभिज्ञान शकुंतलाम"],
-              "answer": "Shakuntala",
-              "attempted": false,
-              "selected": ""
-            },
-            {
-              "num": 7,
-              "question_en": "In Sanskrit, what is the term for 'love'?",
-              "question_hi": "संस्कृत में 'प्रेम' के लिए कौन सा शब्द है?",
-              "options_en": ["Prema", "Kama", "Bhakti", "Sambandha"],
-              "options_hi": ["प्रेम", "काम", "भक्ति", "संबंध"],
-              "answer": "Prema",
-              "attempted": false,
-              "selected": ""
-            },
-            {
-              "num": 8,
-              "question_en": "Which Sanskrit text is dedicated to the teachings of Lord Shiva?",
-              "question_hi": "कौन सा संस्कृत ग्रंथ भगवान शिव के उपदेशों को समर्पित है?",
-              "options_en": ["Shiv Purana", "Vishnu Purana", "Bhagavad Gita", "Rigveda"],
-              "options_hi": ["शिव पुराण", "विष्णु पुराण", "भगवद गीता", "ऋग्वेद"],
-              "answer": "Shiv Purana",
-              "attempted": false,
-              "selected": ""
-            },
-            {
-              "num": 9,
-              "question_en": "What does 'Yoga' mean in Sanskrit?",
-              "question_hi": "संस्कृत में 'योग' का क्या अर्थ है?",
-              "options_en": ["Union", "Discipline", "Meditation", "Health"],
-              "options_hi": ["संयोग", "अनुशासन", "ध्यान", "स्वास्थ्य"],
-              "answer": "Union",
-              "attempted": false,
-              "selected": ""
-            },
-            {
-              "num": 10,
-              "question_en": "Which ancient Indian text is considered the foundation of Sanskrit grammar?",
-              "question_hi": "कौन सा प्राचीन भारतीय ग्रंथ संस्कृत व्याकरण का आधार माना जाता है?",
-              "options_en": ["Ashtadhyayi", "Mahabharata", "Ramayana", "Vedas"],
-              "options_hi": ["अष्टाध्यायी", "महाभारत", "रामायण", "वेद"],
-              "answer": "Ashtadhyayi",
-              "attempted": false,
-              "selected": ""
-            }
-          
-          
+        }
       
       
+  
+  
 
 
 
@@ -113,8 +113,6 @@ const questions = [
 
 
 ];
-
-// Add more questions as needed...
 
 let currentQuestion = 0;
 let language = "en"; // Default English

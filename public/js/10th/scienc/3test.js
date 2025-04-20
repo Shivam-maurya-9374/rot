@@ -1,508 +1,563 @@
 const questions = [
-    
-        {
-          "num": 1,
-          "question_en": "Which of the following is an example of a chemical change?",
-          "question_hi": "निम्नलिखित में से कौन सा रासायनिक परिवर्तन का उदाहरण है?",
-          "options_en": ["Melting of ice", "Rusting of iron", "Dissolving sugar in water", "Boiling of water"],
-          "options_hi": ["बर्फ का पिघलना", "लोहे में जंग लगना", "पानी में चीनी घोलना", "पानी का उबलना"],
-          "answer": "Rusting of iron",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 2,
-          "question_en": "The pH of a neutral solution is:",
-          "question_hi": "एक उदासीन विलयन का pH मान होता है:",
-          "options_en": ["0", "7", "10", "14"],
-          "options_hi": ["0", "7", "10", "14"],
-          "answer": "7",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 3,
-          "question_en": "Which gland secretes insulin?",
-          "question_hi": "कौन सी ग्रंथि इंसुलिन स्रावित करती है?",
-          "options_en": ["Thyroid", "Pituitary", "Pancreas", "Adrenal"],
-          "options_hi": ["थायरॉयड", "पिट्यूटरी", "अग्न्याशय", "अधिवृक्क"],
-          "answer": "Pancreas",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 4,
-          "question_en": "The image formed by a plane mirror is:",
-          "question_hi": "समतल दर्पण द्वारा बना प्रतिबिंब होता है:",
-          "options_en": ["Real and inverted", "Virtual and erect", "Real and erect", "Virtual and inverted"],
-          "options_hi": ["वास्तविक और उल्टा", "आभासी और सीधा", "वास्तविक और सीधा", "आभासी और उल्टा"],
-          "answer": "Virtual and erect",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 5,
-          "question_en": "Which of these is not a renewable source of energy?",
-          "question_hi": "निम्नलिखित में से कौन ऊर्जा का नवीकरणीय स्रोत नहीं है?",
-          "options_en": ["Solar energy", "Wind energy", "Coal", "Biomass"],
-          "options_hi": ["सौर ऊर्जा", "पवन ऊर्जा", "कोयला", "बायोमास"],
-          "answer": "Coal",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 6,
-          "question_en": "The process of depositing zinc on iron is called:",
-          "question_hi": "लोहे पर जिंक की परत चढ़ाने की प्रक्रिया को कहते हैं:",
-          "options_en": ["Galvanization", "Crystallization", "Distillation", "Sedimentation"],
-          "options_hi": ["जस्तीकरण", "क्रिस्टलीकरण", "आसवन", "अवसादन"],
-          "answer": "Galvanization",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 7,
-          "question_en": "Which part of the plant absorbs water and minerals?",
-          "question_hi": "पौधे का कौन सा भाग जल और खनिजों का अवशोषण करता है?",
-          "options_en": ["Leaves", "Stem", "Roots", "Flowers"],
-          "options_hi": ["पत्तियाँ", "तना", "जड़ें", "फूल"],
-          "answer": "Roots",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 8,
-          "question_en": "The chemical formula of sulfuric acid is:",
-          "question_hi": "सल्फ्यूरिक अम्ल का रासायनिक सूत्र है:",
-          "options_en": ["HCl", "HNO₃", "H₂SO₄", "CH₃COOH"],
-          "options_hi": ["HCl", "HNO₃", "H₂SO₄", "CH₃COOH"],
-          "answer": "H₂SO₄",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 9,
-          "question_en": "The unit of electric current is:",
-          "question_hi": "विद्युत धारा का मात्रक है:",
-          "options_en": ["Volt", "Ohm", "Ampere", "Watt"],
-          "options_hi": ["वोल्ट", "ओम", "एम्पियर", "वाट"],
-          "answer": "Ampere",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 10,
-          "question_en": "Which gas is responsible for global warming?",
-          "question_hi": "कौन सी गैस ग्लोबल वार्मिंग के लिए जिम्मेदार है?",
-          "options_en": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
-          "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "कार्बन डाइऑक्साइड", "हाइड्रोजन"],
-          "answer": "Carbon dioxide",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 11,
-          "question_en": "The process by which plants make food is called:",
-          "question_hi": "वह प्रक्रिया जिसके द्वारा पौधे भोजन बनाते हैं, कहलाती है:",
-          "options_en": ["Respiration", "Transpiration", "Photosynthesis", "Digestion"],
-          "options_hi": ["श्वसन", "वाष्पोत्सर्जन", "प्रकाश संश्लेषण", "पाचन"],
-          "answer": "Photosynthesis",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 12,
-          "question_en": "Which metal is liquid at room temperature?",
-          "question_hi": "कौन सी धातु कमरे के तापमान पर तरल होती है?",
-          "options_en": ["Iron", "Mercury", "Gold", "Aluminum"],
-          "options_hi": ["लोहा", "पारा", "सोना", "एल्युमिनियम"],
-          "answer": "Mercury",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 13,
-          "question_en": "The chemical name of baking soda is:",
-          "question_hi": "बेकिंग सोडा का रासायनिक नाम है:",
-          "options_en": ["Sodium chloride", "Sodium bicarbonate", "Sodium carbonate", "Sodium hydroxide"],
-          "options_hi": ["सोडियम क्लोराइड", "सोडियम बाइकार्बोनेट", "सोडियम कार्बोनेट", "सोडियम हाइड्रॉक्साइड"],
-          "answer": "Sodium bicarbonate",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 14,
-          "question_en": "Which part of neuron receives signals?",
-          "question_hi": "न्यूरॉन का कौन सा भाग संकेत प्राप्त करता है?",
-          "options_en": ["Axon", "Dendrite", "Cell body", "Myelin sheath"],
-          "options_hi": ["एक्सॉन", "डेंड्राइट", "कोशिका काय", "मायेलिन आवरण"],
-          "answer": "Dendrite",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 15,
-          "question_en": "The pH of acidic solutions is:",
-          "question_hi": "अम्लीय विलयनों का pH होता है:",
-          "options_en": ["Greater than 7", "Equal to 7", "Less than 7", "Equal to 14"],
-          "options_hi": ["7 से अधिक", "7 के बराबर", "7 से कम", "14 के बराबर"],
-          "answer": "Less than 7",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 16,
-          "question_en": "The image formed by convex lens when object is at 2F is:",
-          "question_hi": "उत्तल लेंस द्वारा बना प्रतिबिंब जब वस्तु 2F पर होती है:",
-          "options_en": ["Real, inverted and same size", "Virtual, erect and enlarged", "Real, inverted and diminished", "Virtual, erect and diminished"],
-          "options_hi": ["वास्तविक, उल्टा और समान आकार", "आभासी, सीधा और आवर्धित", "वास्तविक, उल्टा और छोटा", "आभासी, सीधा और छोटा"],
-          "answer": "Real, inverted and same size",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 17,
-          "question_en": "Which is a renewable energy source?",
-          "question_hi": "कौन सा नवीकरणीय ऊर्जा स्रोत है?",
-          "options_en": ["Coal", "Petroleum", "Natural gas", "Solar energy"],
-          "options_hi": ["कोयला", "पेट्रोलियम", "प्राकृतिक गैस", "सौर ऊर्जा"],
-          "answer": "Solar energy",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 18,
-          "question_en": "Vapor turning to liquid is called:",
-          "question_hi": "वाष्प का द्रव में बदलना कहलाता है:",
-          "options_en": ["Evaporation", "Condensation", "Sublimation", "Freezing"],
-          "options_hi": ["वाष्पीकरण", "संघनन", "उर्ध्वपातन", "हिमीकरण"],
-          "answer": "Condensation",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 19,
-          "question_en": "Which is not a leaf function?",
-          "question_hi": "कौन सा पत्ती का कार्य नहीं है?",
-          "options_en": ["Photosynthesis", "Transpiration", "Food storage", "Water absorption"],
-          "options_hi": ["प्रकाश संश्लेषण", "वाष्पोत्सर्जन", "भोजन संग्रह", "जल अवशोषण"],
-          "answer": "Water absorption",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 20,
-          "question_en": "Heat releasing reaction is called:",
-          "question_hi": "ऊष्मा मुक्त करने वाली अभिक्रिया कहलाती है:",
-          "options_en": ["Endothermic", "Exothermic", "Combustion", "Neutralization"],
-          "options_hi": ["ऊष्माशोषी", "ऊष्माक्षेपी", "दहन", "उदासीनीकरण"],
-          "answer": "Exothermic",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 21,
-          "question_en": "Potential difference is measured by:",
-          "question_hi": "विभवांतर मापा जाता है:",
-          "options_en": ["Ammeter", "Voltmeter", "Galvanometer", "Ohmmeter"],
-          "options_hi": ["एमीटर", "वोल्टमीटर", "गैल्वेनोमीटर", "ओममीटर"],
-          "answer": "Voltmeter",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 22,
-          "question_en": "Which is not part of male reproductive system?",
-          "question_hi": "कौन सा पुरुष प्रजनन तंत्र का भाग नहीं है?",
-          "options_en": ["Testis", "Ovary", "Vas deferens", "Prostate gland"],
-          "options_hi": ["वृषण", "अंडाशय", "वास डिफेरेंस", "प्रोस्टेट ग्रंथि"],
-          "answer": "Ovary",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 23,
-          "question_en": "Light bouncing back from smooth surface is called:",
-          "question_hi": "चिकनी सतह से प्रकाश का वापस लौटना कहलाता है:",
-          "options_en": ["Refraction", "Reflection", "Dispersion", "Scattering"],
-          "options_hi": ["अपवर्तन", "परावर्तन", "विक्षेपण", "प्रकीर्णन"],
-          "answer": "Reflection",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 24,
-          "question_en": "Which is not a urine component?",
-          "question_hi": "कौन सा मूत्र का घटक नहीं है?",
-          "options_en": ["Water", "Urea", "Glucose", "Salts"],
-          "options_hi": ["जल", "यूरिया", "ग्लूकोज", "लवण"],
-          "answer": "Glucose",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 25,
-          "question_en": "Chemical formula of carbon dioxide is:",
-          "question_hi": "कार्बन डाइऑक्साइड का रासायनिक सूत्र है:",
-          "options_en": ["CO", "CO₂", "C₂O", "C₂O₃"],
-          "options_hi": ["CO", "CO₂", "C₂O", "C₂O₃"],
-          "answer": "CO₂",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 26,
-          "question_en": "Which is a non-metal?",
-          "question_hi": "कौन सा अधातु है?",
-          "options_en": ["Iron", "Copper", "Sulfur", "Aluminum"],
-          "options_hi": ["लोहा", "तांबा", "सल्फर", "एल्युमिनियम"],
-          "answer": "Sulfur",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 27,
-          "question_en": "Liquid to vapor is called:",
-          "question_hi": "द्रव से वाष्प बनना कहलाता है:",
-          "options_en": ["Condensation", "Evaporation", "Sublimation", "Freezing"],
-          "options_hi": ["संघनन", "वाष्पीकरण", "उर्ध्वपातन", "हिमीकरण"],
-          "answer": "Evaporation",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 28,
-          "question_en": "Which is not part of respiratory system?",
-          "question_hi": "कौन सा श्वसन तंत्र का भाग नहीं है?",
-          "options_en": ["Nose", "Trachea", "Lungs", "Esophagus"],
-          "options_hi": ["नाक", "श्वासनली", "फेफड़े", "ग्रासनली"],
-          "answer": "Esophagus",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 29,
-          "question_en": "Unit of electric power is:",
-          "question_hi": "विद्युत शक्ति का मात्रक है:",
-          "options_en": ["Volt", "Ampere", "Watt", "Ohm"],
-          "options_hi": ["वोल्ट", "एम्पियर", "वाट", "ओम"],
-          "answer": "Watt",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 30,
-          "question_en": "Which is a greenhouse gas?",
-          "question_hi": "कौन सी ग्रीनहाउस गैस है?",
-          "options_en": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
-          "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "कार्बन डाइऑक्साइड", "हाइड्रोजन"],
-          "answer": "Carbon dioxide",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 31,
-          "question_en": "Plants prepare food by:",
-          "question_hi": "पौधे भोजन तैयार करते हैं:",
-          "options_en": ["Respiration", "Transpiration", "Photosynthesis", "Digestion"],
-          "options_hi": ["श्वसन", "वाष्पोत्सर्जन", "प्रकाश संश्लेषण", "पाचन"],
-          "answer": "Photosynthesis",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 32,
-          "question_en": "Which is a noble gas?",
-          "question_hi": "कौन सी अक्रिय गैस है?",
-          "options_en": ["Hydrogen", "Oxygen", "Helium", "Nitrogen"],
-          "options_hi": ["हाइड्रोजन", "ऑक्सीजन", "हीलियम", "नाइट्रोजन"],
-          "answer": "Helium",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 33,
-          "question_en": "Chemical name of lime water is:",
-          "question_hi": "चूने के पानी का रासायनिक नाम है:",
-          "options_en": ["Calcium oxide", "Calcium hydroxide", "Calcium carbonate", "Calcium chloride"],
-          "options_hi": ["कैल्शियम ऑक्साइड", "कैल्शियम हाइड्रॉक्साइड", "कैल्शियम कार्बोनेट", "कैल्शियम क्लोराइड"],
-          "answer": "Calcium hydroxide",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 34,
-          "question_en": "Which metal reacts vigorously with water?",
-          "question_hi": "कौन सी धातु पानी के साथ तीव्रता से अभिक्रिया करती है?",
-          "options_en": ["Iron", "Copper", "Sodium", "Gold"],
-          "options_hi": ["लोहा", "तांबा", "सोडियम", "सोना"],
-          "answer": "Sodium",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 35,
-          "question_en": "The colored part of eye is called:",
-          "question_hi": "आँख के रंगीन भाग को कहते हैं:",
-          "options_en": ["Cornea", "Retina", "Iris", "Pupil"],
-          "options_hi": ["कॉर्निया", "रेटिना", "आइरिस", "पुतली"],
-          "answer": "Iris",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 36,
-          "question_en": "Which acid is present in vinegar?",
-          "question_hi": "सिरका में कौन सा अम्ल पाया जाता है?",
-          "options_en": ["Hydrochloric acid", "Sulfuric acid", "Acetic acid", "Nitric acid"],
-          "options_hi": ["हाइड्रोक्लोरिक अम्ल", "सल्फ्यूरिक अम्ल", "एसिटिक अम्ल", "नाइट्रिक अम्ल"],
-          "answer": "Acetic acid",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 37,
-          "question_en": "The process of cell division is called:",
-          "question_hi": "कोशिका विभाजन की प्रक्रिया को कहते हैं:",
-          "options_en": ["Respiration", "Photosynthesis", "Mitosis", "Transpiration"],
-          "options_hi": ["श्वसन", "प्रकाश संश्लेषण", "सूत्री विभाजन", "वाष्पोत्सर्जन"],
-          "answer": "Mitosis",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 38,
-          "question_en": "Which is not a component of blood?",
-          "question_hi": "कौन सा रक्त का घटक नहीं है?",
-          "options_en": ["Plasma", "Platelets", "Bone cells", "Red blood cells"],
-          "options_hi": ["प्लाज्मा", "प्लेटलेट्स", "हड्डी कोशिकाएँ", "लाल रक्त कोशिकाएँ"],
-          "answer": "Bone cells",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 39,
-          "question_en": "The chemical formula of methane is:",
-          "question_hi": "मीथेन का रासायनिक सूत्र है:",
-          "options_en": ["CH₄", "C₂H₆", "C₃H₈", "C₄H₁₀"],
-          "options_hi": ["CH₄", "C₂H₆", "C₃H₈", "C₄H₁₀"],
-          "answer": "CH₄",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 40,
-          "question_en": "Which is not a metal?",
-          "question_hi": "कौन सा धातु नहीं है?",
-          "options_en": ["Gold", "Silver", "Carbon", "Iron"],
-          "options_hi": ["सोना", "चाँदी", "कार्बन", "लोहा"],
-          "answer": "Carbon",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 41,
-          "question_en": "Sugar to alcohol conversion is called:",
-          "question_hi": "चीनी को अल्कोहल में बदलने की प्रक्रिया को कहते हैं:",
-          "options_en": ["Fermentation", "Distillation", "Evaporation", "Sublimation"],
-          "options_hi": ["किण्वन", "आसवन", "वाष्पीकरण", "उर्ध्वपातन"],
-          "answer": "Fermentation",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 42,
-          "question_en": "Which is not part of excretory system?",
-          "question_hi": "कौन सा उत्सर्जन तंत्र का भाग नहीं है?",
-          "options_en": ["Kidney", "Ureter", "Lungs", "Esophagus"],
-          "options_hi": ["वृक्क", "मूत्रवाहिनी", "फेफड़े", "ग्रासनली"],
-          "answer": "Esophagus",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 43,
-          "question_en": "Unit of electric resistance is:",
-          "question_hi": "विद्युत प्रतिरोध का मात्रक है:",
-          "options_en": ["Volt", "Ampere", "Ohm", "Watt"],
-          "options_hi": ["वोल्ट", "एम्पियर", "ओम", "वाट"],
-          "answer": "Ohm",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 44,
-          "question_en": "Which is not a greenhouse gas?",
-          "question_hi": "कौन सी ग्रीनहाउस गैस नहीं है?",
-          "options_en": ["Carbon dioxide", "Nitrogen", "Methane", "Water vapor"],
-          "options_hi": ["कार्बन डाइऑक्साइड", "नाइट्रोजन", "मीथेन", "जल वाष्प"],
-          "answer": "Nitrogen",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 45,
-          "question_en": "Plants lose water through leaves by:",
-          "question_hi": "पौधे पत्तियों के माध्यम से पानी खो देते हैं:",
-          "options_en": ["Photosynthesis", "Transpiration", "Respiration", "Evaporation"],
-          "options_hi": ["प्रकाश संश्लेषण", "वाष्पोत्सर्जन", "श्वसन", "वाष्पीकरण"],
-          "answer": "Transpiration",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 46,
-          "question_en": "Which is not a noble gas?",
-          "question_hi": "कौन सी अक्रिय गैस नहीं है?",
-          "options_en": ["Helium", "Neon", "Hydrogen", "Argon"],
-          "options_hi": ["हीलियम", "नियॉन", "हाइड्रोजन", "आर्गन"],
-          "answer": "Hydrogen",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 47,
-          "question_en": "Chemical name of common salt is:",
-          "question_hi": "साधारण नमक का रासायनिक नाम है:",
-          "options_en": ["Sodium chloride", "Sodium carbonate", "Sodium bicarbonate", "Sodium hydroxide"],
-          "options_hi": ["सोडियम क्लोराइड", "सोडियम कार्बोनेट", "सोडियम बाइकार्बोनेट", "सोडियम हाइड्रॉक्साइड"],
-          "answer": "Sodium chloride",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 48,
-          "question_en": "Which is not part of nervous system?",
-          "question_hi": "कौन सा तंत्रिका तंत्र का भाग नहीं है?",
-          "options_en": ["Brain", "Spinal cord", "Nerves", "Heart"],
-          "options_hi": ["मस्तिष्क", "मेरुरज्जु", "तंत्रिकाएँ", "हृदय"],
-          "answer": "Heart",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 49,
-          "question_en": "pH of basic solutions is:",
-          "question_hi": "क्षारीय विलयनों का pH होता है:",
-          "options_en": ["Less than 7", "Equal to 7", "Greater than 7", "Equal to 0"],
-          "options_hi": ["7 से कम", "7 के बराबर", "7 से अधिक", "0 के बराबर"],
-          "answer": "Greater than 7",
-          "attempted": false,
-          "selected": ""
-        },
-        {
-          "num": 50,
-          "question_en": "Convex lens forms virtual image when object is:",
-          "question_hi": "उत्तल लेंस आभासी प्रतिबिंब बनाता है जब वस्तु होती है:",
-          "options_en": ["Beyond 2F", "At 2F", "Between F and 2F", "Between F and optical center"],
-          "options_hi": ["2F से परे", "2F पर", "F और 2F के बीच", "F और प्रकाशीय केंद्र के बीच"],
-          "answer": "Between F and optical center",
-          "attempted": false,
-          "selected": ""
-        }
-      
+
+
+
+  {
+    "num": 1,
+    "question_en": "Which of the following is an example of a physical change?",
+    "question_hi": "निम्नलिखित में से कौन सा भौतिक परिवर्तन का उदाहरण है?",
+    "options_en": ["Burning of wood", "Melting of wax", "Formation of curd", "Digestion of food"],
+    "options_hi": ["लकड़ी का जलना", "मोम का पिघलना", "दही का बनना", "भोजन का पाचन"],
+    "answer_en": "Melting of wax",
+    "answer_hi": "मोम का पिघलना",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 2,
+    "question_en": "The pH of a basic solution is:",
+    "question_hi": "एक क्षारीय विलयन का pH मान होता है:",
+    "options_en": ["Less than 7", "Equal to 7", "Greater than 7", "Equal to 0"],
+    "options_hi": ["7 से कम", "7 के बराबर", "7 से अधिक", "0 के बराबर"],
+    "answer_en": "Greater than 7",
+    "answer_hi": "7 से अधिक",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 3,
+    "question_en": "Which hormone regulates blood sugar levels?",
+    "question_hi": "कौन सा हार्मोन रक्त शर्करा के स्तर को नियंत्रित करता है?",
+    "options_en": ["Thyroxine", "Adrenaline", "Insulin", "Growth hormone"],
+    "options_hi": ["थायरोक्सिन", "एड्रेनालाईन", "इंसुलिन", "वृद्धि हार्मोन"],
+    "answer_en": "Insulin",
+    "answer_hi": "इंसुलिन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 4,
+    "question_en": "The human eye forms which type of image?",
+    "question_hi": "मानव नेत्र किस प्रकार का प्रतिबिंब बनाता है?",
+    "options_en": ["Real and erect", "Virtual and erect", "Real and inverted", "Virtual and inverted"],
+    "options_hi": ["वास्तविक और सीधा", "आभासी और सीधा", "वास्तविक और उल्टा", "आभासी और उल्टा"],
+    "answer_en": "Real and inverted",
+    "answer_hi": "वास्तविक और उल्टा",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 5,
+    "question_en": "Which of these is a fossil fuel?",
+    "question_hi": "निम्नलिखित में से कौन सा जीवाश्म ईंधन है?",
+    "options_en": ["Wind energy", "Solar energy", "Natural gas", "Hydropower"],
+    "options_hi": ["पवन ऊर्जा", "सौर ऊर्जा", "प्राकृतिक गैस", "जलविद्युत"],
+    "answer_en": "Natural gas",
+    "answer_hi": "प्राकृतिक गैस",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 6,
+    "question_en": "The process of coating iron with tin is called:",
+    "question_hi": "लोहे पर टिन की परत चढ़ाने की प्रक्रिया को कहते हैं:",
+    "options_en": ["Galvanization", "Tinning", "Electroplating", "Alloying"],
+    "options_hi": ["जस्तीकरण", "टिनिंग", "विद्युतलेपन", "मिश्र धातु बनाना"],
+    "answer_en": "Tinning",
+    "answer_hi": "टिनिंग",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 7,
+    "question_en": "Which part of the plant is involved in photosynthesis?",
+    "question_hi": "पौधे का कौन सा भाग प्रकाश संश्लेषण में शामिल है?",
+    "options_en": ["Roots", "Stem", "Leaves", "Flowers"],
+    "options_hi": ["जड़ें", "तना", "पत्तियाँ", "फूल"],
+    "answer_en": "Leaves",
+    "answer_hi": "पत्तियाँ",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 8,
+    "question_en": "The chemical formula of nitric acid is:",
+    "question_hi": "नाइट्रिक अम्ल का रासायनिक सूत्र है:",
+    "options_en": ["HCl", "H₂SO₄", "HNO₃", "CH₃COOH"],
+    "options_hi": ["HCl", "H₂SO₄", "HNO₃", "CH₃COOH"],
+    "answer_en": "HNO₃",
+    "answer_hi": "HNO₃",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 9,
+    "question_en": "The unit of electric charge is:",
+    "question_hi": "विद्युत आवेश का मात्रक है:",
+    "options_en": ["Volt", "Ampere", "Coulomb", "Watt"],
+    "options_hi": ["वोल्ट", "एम्पियर", "कूलॉम", "वाट"],
+    "answer_en": "Coulomb",
+    "answer_hi": "कूलॉम",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 10,
+    "question_en": "Which of the following contributes to acid rain?",
+    "question_hi": "निम्नलिखित में से कौन अम्ल वर्षा में योगदान देता है?",
+    "options_en": ["Oxygen", "Nitrogen", "Sulfur dioxide", "Hydrogen"],
+    "options_hi": ["ऑक्सीजन", "नाइट्रोजन", "सल्फर डाइऑक्साइड", "हाइड्रोजन"],
+    "answer_en": "Sulfur dioxide",
+    "answer_hi": "सल्फर डाइऑक्साइड",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 11,
+    "question_en": "The exchange of gases in plants occurs through:",
+    "question_hi": "पौधों में गैसों का आदान-प्रदान किसके माध्यम से होता है?",
+    "options_en": ["Roots", "Stem", "Leaves (stomata)", "Flowers"],
+    "options_hi": ["जड़ें", "तना", "पत्तियाँ (रंध्र)", "फूल"],
+    "answer_en": "Leaves (stomata)",
+    "answer_hi": "पत्तियाँ (रंध्र)",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 12,
+    "question_en": "Which non-metal is essential for life and found in air?",
+    "question_hi": "कौन सा अधातु जीवन के लिए आवश्यक है और हवा में पाया जाता है?",
+    "options_en": ["Carbon", "Sulfur", "Oxygen", "Phosphorus"],
+    "options_hi": ["कार्बन", "सल्फर", "ऑक्सीजन", "फास्फोरस"],
+    "answer_en": "Oxygen",
+    "answer_hi": "ऑक्सीजन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 13,
+    "question_en": "The chemical formula of washing soda is:",
+    "question_hi": "धोने के सोडा का रासायनिक सूत्र है:",
+    "options_en": ["NaCl", "NaHCO₃", "Na₂CO₃", "NaOH"],
+    "options_hi": ["NaCl", "NaHCO₃", "Na₂CO₃", "NaOH"],
+    "answer_en": "Na₂CO₃",
+    "answer_hi": "Na₂CO₃",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 14,
+    "question_en": "The main function of red blood cells is:",
+    "question_hi": "लाल रक्त कोशिकाओं का मुख्य कार्य है:",
+    "options_en": ["Fighting infection", "Clotting of blood", "Transporting oxygen", "Transporting nutrients"],
+    "options_hi": ["संक्रमण से लड़ना", "रक्त का थक्का जमना", "ऑक्सीजन का परिवहन", "पोषक तत्वों का परिवहन"],
+    "answer_en": "Transporting oxygen",
+    "answer_hi": "ऑक्सीजन का परिवहन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 15,
+    "question_en": "The pH of alkaline solutions is:",
+    "question_hi": "क्षारीय विलयनों का pH होता है:",
+    "options_en": ["Less than 7", "Equal to 7", "Greater than 7", "Equal to 0"],
+    "options_hi": ["7 से कम", "7 के बराबर", "7 से अधिक", "0 के बराबर"],
+    "answer_en": "Greater than 7",
+    "answer_hi": "7 से अधिक",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 16,
+    "question_en": "Concave lens always forms which type of image?",
+    "question_hi": "अवतल लेंस हमेशा किस प्रकार का प्रतिबिंब बनाता है?",
+    "options_en": ["Real and inverted", "Virtual and erect", "Real and erect", "Virtual and inverted"],
+    "options_hi": ["वास्तविक और उल्टा", "आभासी और सीधा", "वास्तविक और सीधा", "आभासी और उल्टा"],
+    "answer_en": "Virtual and erect",
+    "answer_hi": "आभासी और सीधा",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 17,
+    "question_en": "Which of the following is a non-renewable energy source?",
+    "question_hi": "निम्नलिखित में से कौन सा गैर-नवीकरणीय ऊर्जा स्रोत है?",
+    "options_en": ["Hydropower", "Geothermal energy", "Coal", "Wind power"],
+    "options_hi": ["जलविद्युत", "भूतापीय ऊर्जा", "कोयला", "पवन ऊर्जा"],
+    "answer_en": "Coal",
+    "answer_hi": "कोयला",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 18,
+    "question_en": "Solid directly changing to gas is called:",
+    "question_hi": "ठोस सीधे गैस में बदलना कहलाता है:",
+    "options_en": ["Melting", "Evaporation", "Sublimation", "Condensation"],
+    "options_hi": ["पिघलना", "वाष्पीकरण", "उर्ध्वपातन", "संघनन"],
+    "answer_en": "Sublimation",
+    "answer_hi": "उर्ध्वपातन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 19,
+    "question_en": "Which of the following is a function of the stem in a plant?",
+    "question_hi": "निम्नलिखित में से कौन सा पौधे में तने का कार्य है?",
+    "options_en": ["Absorption of water", "Photosynthesis", "Support and transport", "Reproduction"],
+    "options_hi": ["पानी का अवशोषण", "प्रकाश संश्लेषण", "समर्थन और परिवहन", "प्रजनन"],
+    "answer_en": "Support and transport",
+    "answer_hi": "समर्थन और परिवहन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 20,
+    "question_en": "A reaction between an acid and a base is called:",
+    "question_hi": "एक अम्ल और क्षार के बीच की अभिक्रिया कहलाती है:",
+    "options_en": ["Oxidation", "Reduction", "Neutralization", "Combustion"],
+    "options_hi": ["ऑक्सीकरण", "अपचयन", "उदासीनीकरण", "दहन"],
+    "answer_en": "Neutralization",
+    "answer_hi": "उदासीनीकरण",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 21,
+    "question_en": "Ohm's law relates:",
+    "question_hi": "ओम का नियम संबंधित है:",
+    "options_en": ["Voltage and current", "Current and resistance", "Voltage and resistance", "Voltage, current, and resistance"],
+    "options_hi": ["वोल्टेज और धारा", "धारा और प्रतिरोध", "वोल्टेज और प्रतिरोध", "वोल्टेज, धारा और प्रतिरोध"],
+    "answer_en": "Voltage, current, and resistance",
+    "answer_hi": "वोल्टेज, धारा और प्रतिरोध",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 22,
+    "question_en": "Fertilization in humans takes place in:",
+    "question_hi": "मनुष्यों में निषेचन कहाँ होता है?",
+    "options_en": ["Ovary", "Uterus", "Fallopian tube", "Vagina"],
+    "options_hi": ["अंडाशय", "गर्भाशय", "फैलोपियन ट्यूब", "योनि"],
+    "answer_en": "Fallopian tube",
+    "answer_hi": "फैलोपियन ट्यूब",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 23,
+    "question_en": "The splitting of white light into seven colors is called:",
+    "question_hi": "श्वेत प्रकाश का सात रंगों में टूटना कहलाता है:",
+    "options_en": ["Reflection", "Refraction", "Dispersion", "Interference"],
+    "options_hi": ["परावर्तन", "अपवर्तन", "विक्षेपण", "व्यतिकरण"],
+    "answer_en": "Dispersion",
+    "answer_hi": "विक्षेपण",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 24,
+    "question_en": "Which of the following is removed from the body by the kidneys?",
+    "question_hi": "निम्नलिखित में से क्या गुर्दे द्वारा शरीर से निकाला जाता है?",
+    "options_en": ["Carbon dioxide", "Oxygen", "Urea", "Undigested food"],
+    "options_hi": ["कार्बन डाइऑक्साइड", "ऑक्सीजन", "यूरिया", "अपचित भोजन"],
+    "answer_en": "Urea",
+    "answer_hi": "यूरिया",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 25,
+    "question_en": "The chemical formula of glucose is:",
+    "question_hi": "ग्लूकोज का रासायनिक सूत्र है:",
+    "options_en": ["C₆H₁₂O₆", "CH₃COOH", "C₁₂H₂₂O₁₁", "NaHCO₃"],
+    "options_hi": ["C₆H₁₂O₆", "CH₃COOH", "C₁₂H₂₂O₁₁", "NaHCO₃"],
+    "answer_en": "C₆H₁₂O₆",
+    "answer_hi": "C₆H₁₂O₆",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 26,
+    "question_en": "Which of the following is a metalloid?",
+    "question_hi": "निम्नलिखित में से कौन सा उपधातु है?",
+    "options_en": ["Iron", "Copper", "Silicon", "Gold"],
+    "options_hi": ["लोहा", "तांबा", "सिलिकॉन", "सोना"],
+    "answer_en": "Silicon",
+    "answer_hi": "सिलिकॉन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 27,
+    "question_en": "The boiling point of water is:",
+    "question_hi": "पानी का क्वथनांक है:",
+    "options_en": ["0°C", "100°C", "25°C", "50°C"],
+    "options_hi": ["0°C", "100°C", "25°C", "50°C"],
+    "answer_en": "100°C",
+    "answer_hi": "100°C",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 28,
+    "question_en": "The functional unit of the kidney is:",
+    "question_hi": "गुर्दे की कार्यात्मक इकाई है:",
+    "options_en": ["Neuron", "Nephron", "Alveoli", "Bronchiole"],
+    "options_hi": ["न्यूरॉन", "नेफ्रॉन", "वायुकोशिका", "श्वसनी"],
+    "answer_en": "Nephron",
+    "answer_hi": "नेफ्रॉन",
+    "attempted": false,
+    "selected": ""
+  },
+
+
+  {
+    "num": 29,
+    "question_en": "The device used to convert electrical energy into mechanical energy is:",
+    "question_hi": "विद्युत ऊर्जा को यांत्रिक ऊर्जा में बदलने के लिए प्रयुक्त उपकरण है:",
+    "options_en": ["Generator", "Electric motor", "Dynamo", "Battery"],
+    "options_hi": ["जनरेटर", "विद्युत मोटर", "डायनेमो", "बैटरी"],
+    "answer_en": "Electric motor",
+    "answer_hi": "विद्युत मोटर",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 30,
+    "question_en": "Which of the following gases is essential for breathing?",
+    "question_hi": "निम्नलिखित में से कौन सी गैस सांस लेने के लिए आवश्यक है?",
+    "options_en": ["Carbon dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+    "options_hi": ["कार्बन डाइऑक्साइड", "नाइट्रोजन", "ऑक्सीजन", "हाइड्रोजन"],
+    "answer_en": "Oxygen",
+    "answer_hi": "ऑक्सीजन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 31,
+    "question_en": "The process of reproduction in Amoeba is:",
+    "question_hi": "अमीबा में प्रजनन की प्रक्रिया है:",
+    "options_en": ["Budding", "Binary fission", "Fragmentation", "Regeneration"],
+    "options_hi": ["मुकुलन", "द्विखंडन", "खंडन", "पुनर्जनन"],
+    "answer_en": "Binary fission",
+    "answer_hi": "द्विखंडन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 32,
+    "question_en": "Which of the following is a halogen?",
+    "question_hi": "निम्नलिखित में से कौन सा हैलोजन है?",
+    "options_en": ["Sodium", "Potassium", "Chlorine", "Calcium"],
+    "options_hi": ["सोडियम", "पोटेशियम", "क्लोरीन", "कैल्शियम"],
+    "answer_en": "Chlorine",
+    "answer_hi": "क्लोरीन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 33,
+    "question_en": "The freezing point of water is:",
+    "question_hi": "पानी का हिमांक है:",
+    "options_en": ["100°C", "0°C", "25°C", "-10°C"],
+    "options_hi": ["100°C", "0°C", "25°C", "-10°C"],
+    "answer_en": "0°C",
+    "answer_hi": "0°C",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 34,
+    "question_en": "The control center of the cell is:",
+    "question_hi": "कोशिका का नियंत्रण केंद्र है:",
+    "options_en": ["Cytoplasm", "Nucleus", "Mitochondria", "Cell membrane"],
+    "options_hi": ["कोशिका द्रव्य", "केंद्रक", "माइटोकॉन्ड्रिया", "कोशिका झिल्ली"],
+    "answer_en": "Nucleus",
+    "answer_hi": "केंद्रक",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 35,
+    "question_en": "The device used to measure wind speed is:",
+    "question_hi": "हवा की गति मापने के लिए प्रयुक्त उपकरण है:",
+    "options_en": ["Barometer", "Thermometer", "Anemometer", "Hygrometer"],
+    "options_hi": ["बैरोमीटर", "थर्मामीटर", "एनीमोमीटर", "हाइग्रोमीटर"],
+    "answer_en": "Anemometer",
+    "answer_hi": "एनीमोमीटर",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 36,
+    "question_en": "Which gas is released during photosynthesis?",
+    "question_hi": "प्रकाश संश्लेषण के दौरान कौन सी गैस निकलती है?",
+    "options_en": ["Carbon dioxide", "Nitrogen", "Oxygen", "Hydrogen"],
+    "options_hi": ["कार्बन डाइऑक्साइड", "नाइट्रोजन", "ऑक्सीजन", "हाइड्रोजन"],
+    "answer_en": "Oxygen",
+    "answer_hi": "ऑक्सीजन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 37,
+    "question_en": "The transfer of pollen grains from anther to stigma is called:",
+    "question_hi": "परागकोष से वर्तिकाग्र तक पराग कणों का स्थानांतरण कहलाता है:",
+    "options_en": ["Fertilization", "Pollination", "Germination", "Reproduction"],
+    "options_hi": ["निषेचन", "परागण", "अंकुरण", "प्रजनन"],
+    "answer_en": "Pollination",
+    "answer_hi": "परागण",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 38,
+    "question_en": "Which of the following is a noble metal?",
+    "question_hi": "निम्नलिखित में से कौन सी एक उत्कृष्ट धातु है?",
+    "options_en": ["Iron", "Copper", "Silver", "Lead"],
+    "options_hi": ["लोहा", "तांबा", "चाँदी", "सीसा"],
+    "answer_en": "Silver",
+    "answer_hi": "चाँदी",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 39,
+    "question_en": "The change of state from gas to liquid is called:",
+    "question_hi": "गैस से द्रव में अवस्था परिवर्तन कहलाता है:",
+    "options_en": ["Evaporation", "Condensation", "Sublimation", "Melting"],
+    "options_hi": ["वाष्पीकरण", "संघनन", "उर्ध्वपातन", "पिघलना"],
+    "answer_en": "Condensation",
+    "answer_hi": "संघनन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 40,
+    "question_en": "Which part of the brain controls involuntary actions?",
+    "question_hi": "मस्तिष्क का कौन सा भाग अनैच्छिक क्रियाओं को नियंत्रित करता है?",
+    "options_en": ["Cerebrum", "Cerebellum", "Medulla", "Hypothalamus"],
+    "options_hi": ["सेरेब्रम", "अनुमस्तिष्क", "मज्जा", "हाइपोथैलेमस"],
+    "answer_en": "Medulla",
+    "answer_hi": "मज्जा",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 41,
+    "question_en": "The chemical formula of ammonia is:",
+    "question_hi": "अमोनिया का रासायनिक सूत्र है:",
+    "options_en": ["CO₂", "NH₃", "CH₄", "H₂O"],
+    "options_hi": ["CO₂", "NH₃", "CH₄", "H₂O"],
+    "answer_en": "NH₃",
+    "answer_hi": "NH₃",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 42,
+    "question_en": "Which of the following is a semiconductor?",
+    "question_hi": "निम्नलिखित में से कौन सा अर्धचालक है?",
+    "options_en": ["Copper", "Aluminum", "Silicon", "Gold"],
+    "options_hi": ["तांबा", "एल्युमिनियम", "सिलिकॉन", "सोना"],
+    "answer_en": "Silicon",
+    "answer_hi": "सिलिकॉन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 43,
+    "question_en": "The process of conversion of solid to liquid is called:",
+    "question_hi": "ठोस से द्रव में परिवर्तन की प्रक्रिया कहलाती है:",
+    "options_en": ["Freezing", "Melting", "Boiling", "Condensation"],
+    "options_hi": ["जमना", "पिघलना", "उबलना", "संघनन"],
+    "answer_en": "Melting",
+    "answer_hi": "पिघलना",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 44,
+    "question_en": "Which vitamin is essential for blood clotting?",
+    "question_hi": "कौन सा विटामिन रक्त के थक्के जमने के लिए आवश्यक है?",
+    "options_en": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin K"],
+    "options_hi": ["विटामिन ए", "विटामिन बी", "विटामिन सी", "विटामिन के"],
+    "answer_en": "Vitamin K",
+    "answer_hi": "विटामिन के",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 45,
+    "question_en": "The SI unit of frequency is:",
+    "question_hi": "आवृत्ति का SI मात्रक है:",
+    "options_en": ["Hertz", "Joule", "Watt", "Newton"],
+    "options_hi": ["हर्ट्ज़", "जूल", "वाट", "न्यूटन"],
+    "answer_en": "Hertz",
+    "answer_hi": "हर्ट्ज़",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 46,
+    "question_en": "Which of the following is a product of photosynthesis?",
+    "question_hi": "निम्नलिखित में से कौन सा प्रकाश संश्लेषण का उत्पाद है?",
+    "options_en": ["Carbon dioxide", "Water", "Oxygen", "Nitrogen"],
+    "options_hi": ["कार्बन डाइऑक्साइड", "पानी", "ऑक्सीजन", "नाइट्रोजन"],
+    "answer_en": "Oxygen",
+    "answer_hi": "ऑक्सीजन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 47,
+    "question_en": "The transfer of genetic information from parent to offspring is called:",
+    "question_hi": "माता-पिता से संतानों में आनुवंशिक जानकारी का स्थानांतरण कहलाता है:",
+    "options_en": ["Evolution", "Heredity", "Adaptation", "Variation"],
+    "options_hi": ["विकास", "आनुवंशिकता", "अनुकूलन", "भिन्नता"],
+    "answer_en": "Heredity",
+    "answer_hi": "आनुवंशिकता",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 48,
+    "question_en": "Which of the following is an alloy of copper and zinc?",
+    "question_hi": "निम्नलिखित में से कौन तांबा और जस्ता की मिश्र धातु है?",
+    "options_en": ["Steel", "Brass", "Bronze", "Solder"],
+    "options_hi": ["स्टील", "पीतल", "कांसा", "सोल्डर"],
+    "answer_en": "Brass",
+    "answer_hi": "पीतल",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 49,
+    "question_en": "The phenomenon responsible for the blue color of the sky is:",
+    "question_hi": "आकाश के नीले रंग के लिए जिम्मेदार घटना है:",
+    "options_en": ["Reflection", "Refraction", "Dispersion", "Scattering"],
+    "options_hi": ["परावर्तन", "अपवर्तन", "विक्षेपण", "प्रकीर्णन"],
+    "answer_en": "Scattering",
+    "answer_hi": "प्रकीर्णन",
+    "attempted": false,
+    "selected": ""
+  },
+  {
+    "num": 50,
+    "question_en": "Which part of the digestive system absorbs water from undigested food?",
+    "question_hi": "पाचन तंत्र का कौन सा भाग अपचित भोजन से पानी को अवशोषित करता है?",
+    "options_en": ["Small intestine", "Large intestine", "Stomach", "Esophagus"],
+    "options_hi": ["छोटी आंत", "बड़ी आंत", "आमाशय", "ग्रासनली"],
+    "answer_en": "Large intestine",
+    "answer_hi": "बड़ी आंत",
+    "attempted": false,
+    "selected": ""
+  }
+
+
 ];
-    
+
 
 // Add more questions as needed...
 
@@ -514,122 +569,127 @@ let timeLeft = 300;
 let timerInterval;
 
 function loadQuestion(index) {
-    const questionText = language === "en" ? questions[index].question_en : questions[index].question_hi;
-    const optionsArray = language === "en" ? questions[index].options_en : questions[index].options_hi;
+  const questionText = language === "en" ? questions[index].question_en : questions[index].question_hi;
+  const optionsArray = language === "en" ? questions[index].options_en : questions[index].options_hi;
 
-    document.getElementById("question").textContent = `${questions[index].num}. ${questionText}`;
-    document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
+  document.getElementById("question").textContent = `${questions[index].num}. ${questionText}`;
+  document.getElementById("questionCounter").textContent = `Question ${index + 1} of ${questions.length}`;
 
-    const optionsElement = document.getElementById("options");
-    optionsElement.innerHTML = "";
+  const optionsElement = document.getElementById("options");
+  optionsElement.innerHTML = "";
 
-    optionsArray.forEach(option => {
-        optionsElement.innerHTML += `<li><input type="radio" name="option" value="${option}" onclick="markAttempted(${index}, '${option}')"> ${option}</li>`;
-    });
+  optionsArray.forEach(option => {
+    optionsElement.innerHTML += `<li><input type="radio" name="option" value="${option}" onclick="markAttempted(${index}, '${option}')"> ${option}</li>`;
+  });
 
-    updateCircles();
+  updateCircles();
 }
 
 function markAttempted(index, selectedAnswer) {
-    questions[index].attempted = true;
-    questions[index].selected = selectedAnswer;
-    updateCircles();
+  questions[index].attempted = true;
+  questions[index].selected = selectedAnswer;
+  updateCircles();
 }
 
 function nextQuestion() {
-    if (currentQuestion < questions.length - 1) {
-        currentQuestion++;
-        loadQuestion(currentQuestion);
-    }
+  if (currentQuestion < questions.length - 1) {
+    currentQuestion++;
+    loadQuestion(currentQuestion);
+  }
 }
 
 function prevQuestion() {
-    if (currentQuestion > 0) {
-        currentQuestion--;
-        loadQuestion(currentQuestion);
-    }
+  if (currentQuestion > 0) {
+    currentQuestion--;
+    loadQuestion(currentQuestion);
+  }
 }
 
 function updateCircles() {
-    const circleContainer = document.getElementById("circleContainer");
-    circleContainer.innerHTML = "";
-    const start = currentCirclePage * circlesPerPage;
-    const end = Math.min(start + circlesPerPage, questions.length);
+  const circleContainer = document.getElementById("circleContainer");
+  circleContainer.innerHTML = "";
+  const start = currentCirclePage * circlesPerPage;
+  const end = Math.min(start + circlesPerPage, questions.length);
 
-    for (let i = start; i < end; i++) {
-        const q = questions[i];
-        let status = i === currentQuestion ? "active" : q.attempted ? "answered" : "not-attempted";
-        circleContainer.innerHTML += `<div class="circle ${status}" onclick="jumpToQuestion(${i})">${i + 1}</div>`;
-    }
+  for (let i = start; i < end; i++) {
+    const q = questions[i];
+    let status = i === currentQuestion ? "active" : q.attempted ? "answered" : "not-attempted";
+    circleContainer.innerHTML += `<div class="circle ${status}" onclick="jumpToQuestion(${i})">${i + 1}</div>`;
+  }
 }
 
 function jumpToQuestion(index) {
-    currentQuestion = index;
-    loadQuestion(index);
+  currentQuestion = index;
+  loadQuestion(index);
 }
 
 function prevCirclePage() {
-    if (currentCirclePage > 0) {
-        currentCirclePage--;
-        updateCircles();
-    }
+  if (currentCirclePage > 0) {
+    currentCirclePage--;
+    updateCircles();
+  }
 }
 
 function nextCirclePage() {
-    if ((currentCirclePage + 1) * circlesPerPage < questions.length) {
-        currentCirclePage++;
-        updateCircles();
-    }
+  if ((currentCirclePage + 1) * circlesPerPage < questions.length) {
+    currentCirclePage++;
+    updateCircles();
+  }
 }
 
 function changeLanguage() {
-    language = document.getElementById("languageSelect").value;
-    loadQuestion(currentQuestion);
+  language = document.getElementById("languageSelect").value;
+  loadQuestion(currentQuestion);
 }
 
 function submitQuiz() {
-    let confirmation = confirm("Are you sure you want to submit the test?");
-    if (!confirmation) return;
+  let confirmation = confirm("Are you sure you want to submit the test?");
+  if (!confirmation) return;
 
-    let attempted = 0, notAttempted = 0, score = 0;
-    const results = [];
+  let attempted = 0, notAttempted = 0, score = 0;
+  const results = [];
 
-    questions.forEach(q => {
-        if (q.attempted) {
-            attempted++;
-            if (q.selected === q.answer) score++;
-        } else {
-            notAttempted++;
-        }
-        results.push({ question: q.question_en, selected: q.selected || "Not Answered", correct: q.answer });
-    });
-
-    localStorage.setItem("attempted", attempted);
-    localStorage.setItem("notAttempted", notAttempted);
-    localStorage.setItem("score", score);
-    localStorage.setItem("results", JSON.stringify(results));
-
-    let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
-    if (viewResult) {
-        window.location.href = "/Deshbord/category/test/submit-test.html";
+  questions.forEach(q => {
+    const correctAnswer = language === "en" ? q.answer_en : q.answer_hi;
+    if (q.attempted) {
+      attempted++;
+      if (q.selected === correctAnswer) score++;
+    } else {
+      notAttempted++;
     }
+    results.push({
+      question: language === "en" ? q.question_en : q.question_hi,
+      selected: q.selected || "Not Answered",
+      correct: correctAnswer
+    });
+  });
+
+  localStorage.setItem("attempted", attempted);
+  localStorage.setItem("notAttempted", notAttempted);
+  localStorage.setItem("score", score);
+  localStorage.setItem("results", JSON.stringify(results));
+
+  let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
+  if (viewResult) {
+    window.location.href = "/Deshbord/category/test/submit-test.html";
+  }
 }
 
 function startTimer() {
-    const timerElement = document.getElementById("timer");
-    timerInterval = setInterval(() => {
-        if (timeLeft <= 0) {
-            clearInterval(timerInterval);
-            alert("Time's up! Submitting the quiz automatically.");
-            submitQuiz();
-        } else {
-            timerElement.textContent = timeLeft;
-            timeLeft--;
-        }
-    }, 1000);
+  const timerElement = document.getElementById("timer");
+  timerInterval = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      alert("Time's up! Submitting the quiz automatically.");
+      submitQuiz();
+    } else {
+      timerElement.textContent = timeLeft;
+      timeLeft--;
+    }
+  }, 1000);
 }
 
 window.onload = function () {
-    startTimer();
-    loadQuestion(currentQuestion);
+  startTimer();
+  loadQuestion(currentQuestion);
 };
