@@ -652,13 +652,18 @@ function submitQuiz() {
   const results = [];
 
   questions.forEach(q => {
-    if (q.attempted) {
-      attempted++;
-      if (q.selected === q.answer) score++;
-    } else {
-      notAttempted++;
-    }
-    results.push({ question: q.question_en, selected: q.selected || "Not Answered", correct: q.answer });
+      const correctAnswer = language === "en" ? q.answer_en : q.answer_hi;
+      if (q.attempted) {
+          attempted++;
+          if (q.selected === correctAnswer) score++;
+      } else {
+          notAttempted++;
+      }
+      results.push({ 
+          question: language === "en" ? q.question_en : q.question_hi,
+          selected: q.selected || "Not Answered", 
+          correct: correctAnswer 
+      });
   });
 
   localStorage.setItem("attempted", attempted);
@@ -668,7 +673,7 @@ function submitQuiz() {
 
   let viewResult = confirm("Test submitted successfully! Do you want to view your result?");
   if (viewResult) {
-    window.location.href = "/Deshbord/category/test/submit-test.html";
+      window.location.href = "/Deshbord/category/test/submit-test.html";
   }
 }
 
